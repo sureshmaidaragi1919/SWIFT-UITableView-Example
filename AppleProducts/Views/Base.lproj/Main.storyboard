@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="y6K-mV-6O0">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Product Table View Controller-->
+        <scene sceneID="Rh3-zP-xai">
+            <objects>
+                <tableViewController id="f5e-o7-MP6" customClass="ProductTableViewController" customModule="AppleProducts" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="H6N-VK-3o1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="0.4602290799" green="1" blue="0.63433455289999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductCell" rowHeight="181" id="zTC-Vh-g9E" customClass="ProductTableViewCell" customModule="AppleProducts" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="181"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zTC-Vh-g9E" id="drf-ZP-Zl0">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="180.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5n9-Jq-hcH">
+                                            <rect key="frame" x="12" y="12" width="64" height="64"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="64" id="QIa-vk-O6P"/>
+                                                <constraint firstAttribute="height" constant="64" id="jlY-8s-UzS"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Title Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZe-ws-Rw8">
+                                            <rect key="frame" x="89" y="2" width="274" height="21"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="KCg-Z8-WrU"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ml7-b8-N1N">
+                                            <rect key="frame" x="89" y="28" width="264" height="119"/>
+                                            <string key="text">Macbook pro is the amazing product which works, superfast and I am using for developing the mobile applications in both iOS and Android</string>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="BZe-ws-Rw8" secondAttribute="trailing" constant="12" id="4fU-Pc-Bdv"/>
+                                        <constraint firstItem="5n9-Jq-hcH" firstAttribute="top" secondItem="drf-ZP-Zl0" secondAttribute="top" constant="12" id="6Vk-KN-Sje"/>
+                                        <constraint firstItem="BZe-ws-Rw8" firstAttribute="leading" secondItem="5n9-Jq-hcH" secondAttribute="trailing" constant="13" id="8v9-81-uvj"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ml7-b8-N1N" secondAttribute="trailing" constant="6" id="ItI-pa-FwX"/>
+                                        <constraint firstItem="ml7-b8-N1N" firstAttribute="leading" secondItem="5n9-Jq-hcH" secondAttribute="trailing" constant="13" id="KEv-3T-qfx"/>
+                                        <constraint firstAttribute="bottom" secondItem="ml7-b8-N1N" secondAttribute="bottom" constant="33.5" id="LIc-Ng-voe"/>
+                                        <constraint firstItem="ml7-b8-N1N" firstAttribute="top" secondItem="BZe-ws-Rw8" secondAttribute="bottom" constant="5" id="crR-KB-aDa"/>
+                                        <constraint firstItem="ml7-b8-N1N" firstAttribute="top" secondItem="BZe-ws-Rw8" secondAttribute="bottom" constant="5" id="fom-yg-oLk"/>
+                                        <constraint firstItem="BZe-ws-Rw8" firstAttribute="top" secondItem="drf-ZP-Zl0" secondAttribute="top" constant="2" id="hMX-Lq-E4l"/>
+                                        <constraint firstItem="5n9-Jq-hcH" firstAttribute="leading" secondItem="drf-ZP-Zl0" secondAttribute="leading" constant="12" id="n74-Kj-oa4"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="productDescriptionLabel" destination="ml7-b8-N1N" id="UT1-kZ-5Tj"/>
+                                    <outlet property="productImageView" destination="5n9-Jq-hcH" id="mDG-1b-t2d"/>
+                                    <outlet property="productTitleLabel" destination="BZe-ws-Rw8" id="O7c-yD-all"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="f5e-o7-MP6" id="dZJ-iz-LuW"/>
+                            <outlet property="delegate" destination="f5e-o7-MP6" id="oXI-G2-ho3"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="r2O-qL-Y7i"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1qO-NW-eOW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-180" y="162.3688155922039"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fVQ-bm-Uni">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="y6K-mV-6O0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dJq-hq-1c9">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="f5e-o7-MP6" kind="relationship" relationship="rootViewController" id="gO8-c6-hKb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hyK-dX-7Ua" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-939.20000000000005" y="163.71814092953525"/>
+        </scene>
+    </scenes>
+</document>
