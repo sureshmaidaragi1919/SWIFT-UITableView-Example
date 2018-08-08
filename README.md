@@ -1,5 +1,11 @@
 # SWIFT-UITableView-Example
-This is the simple tableview example in SWIFT 
+This is the simple tableview example in SWIFT
+
+### Features
+1. List the data in table view 
+2. Select select and move around the table
+3. Create sections inside the table view
+4. Delete a cell from any section of the table
 
 
 #### Screenshots of App
