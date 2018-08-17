@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14816A07211B20AB00BFE0CE /* ProductDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14816A06211B20AB00BFE0CE /* ProductDetailsTableViewController.swift */; };
 		14BDA008210F66B400FBCFBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14BDA007210F66B400FBCFBE /* AppDelegate.swift */; };
 		14BDA00D210F66B400FBCFBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14BDA00B210F66B400FBCFBE /* Main.storyboard */; };
 		14BDA010210F66B400FBCFBE /* AppleProducts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 14BDA00E210F66B400FBCFBE /* AppleProducts.xcdatamodeld */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14816A06211B20AB00BFE0CE /* ProductDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsTableViewController.swift; sourceTree = "<group>"; };
 		14BDA004210F66B400FBCFBE /* AppleProducts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleProducts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		14BDA007210F66B400FBCFBE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14BDA00C210F66B400FBCFBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -157,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				14BDA03D21103EE700FBCFBE /* ProductTableViewController.swift */,
+				14816A06211B20AB00BFE0CE /* ProductDetailsTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				14BDA010210F66B400FBCFBE /* AppleProducts.xcdatamodeld in Sources */,
 				14BDA03E21103EE700FBCFBE /* ProductTableViewController.swift in Sources */,
 				14BDA008210F66B400FBCFBE /* AppDelegate.swift in Sources */,
+				14816A07211B20AB00BFE0CE /* ProductDetailsTableViewController.swift in Sources */,
 				14BDA04221107A3C00FBCFBE /* ProductTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

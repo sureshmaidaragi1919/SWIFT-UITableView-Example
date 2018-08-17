@@ -20,12 +20,23 @@
 // 2. Update the data structure of the data model
 
 
+// *Transition from TV to TV details
+// Design the product details screen using the static table view
+// Create a custom class for new table view
+// Get the data model for the class and populate data into the table view
+// Dismiss the keyboard when return key pressed on text field
+
+// Click on the photo, display the camera/photos library
+// Transitions from the products TVC to product details  TVC
+// Update the edit of a product
+
 import UIKit
 
 class ProductTableViewController: UITableViewController {
 
     
     var productLines: [ProductLine] = ProductLine.getProductLines()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -135,6 +146,17 @@ class ProductTableViewController: UITableViewController {
         productLines[sourceIndexPath.section].products.remove(at: sourceIndexPath.row)
     }
     
+    // Mark :- UITableViewDelegate
+    
+    var selectedProduct : Product?
+      override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let productLine = productLines[indexPath.section]
+        let  product = productLine.products[indexPath.row]
+        
+        selectedProduct = product
+        
+        performSegue(withIdentifier: "ShowProductDetail", sender: nil)
+    }
     
     /*
     // Override to support conditional editing of the table view.
